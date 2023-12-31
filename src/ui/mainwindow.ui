@@ -473,11 +473,19 @@
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <widget class="TreeWidget" name="treeWidget">
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QTreeView" name="treeView"/>
       <widget class="QWidget" name="verticalLayoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
         <item>
@@ -547,6 +555,11 @@
    <extends>QWidget</extends>
    <header>bodeplot.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>treewidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

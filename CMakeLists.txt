@@ -27,6 +27,7 @@ qt_add_executable(SpeakerDesigner
     src/response.cpp 
     src/bodeplot.cpp
     src/tracker.cpp
+    src/treewidget.cpp
 )
 
 target_link_libraries(SpeakerDesigner PRIVATE Qt6::Widgets Qt6::OpenGL Qt6::OpenGLWidgets Qwt::Qwt)
